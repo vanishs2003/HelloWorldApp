@@ -13,10 +13,10 @@ steps:
     packageType: 'sdk'
     version: '6.0.x'
 
-- script: dotnet build --configuration $(buildConfiguration)
+- script: dotnet build HelloWorldApp/HelloWorld.csproj --configuration $(buildConfiguration)
   displayName: 'Build project'
 
-- script: dotnet publish -c $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)
+- script: dotnet publish HelloWorldApp/HelloWorld.csproj -c $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)
   displayName: 'Publish output'
 
 - task: PublishBuildArtifacts@1
