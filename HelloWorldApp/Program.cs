@@ -6,7 +6,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello from Azure DevOps build pipeline!");
+            Console.WriteLine("Hello from FEATURE branch");
         }
     }
 }
